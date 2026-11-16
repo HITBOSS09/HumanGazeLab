@@ -1,0 +1,3 @@
+n_fixations,entropy_cutoff_bits,n_confident_and_poor,fraction_confident_and_poor,mean_ig_confident_and_poor,mean_ig_remaining,fraction_inside_half_mass,mean_entropy_bits,dataset,model
+86811,6.649357096905677,9281,0.10691041457879762,-3.8406732945673387,0.0786917943391211,0.2037170654501443,6.927727493160605,COCO-FreeView,B3_index_conditioned
+20685,4.936669640111071,970,0.046893884457336235,-3.7576733654631007,2.0507617778305995,0.4169425511197663,5.307790038748311,OSIE,B3_index_conditioned

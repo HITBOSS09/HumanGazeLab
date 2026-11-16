@@ -1,0 +1,73 @@
+# Frozen before any DeepGaze region score. Exploratory. The 700-image
+# information gains were already inspected, so this is not a confirmation split.
+status: exploratory
+model_training: false
+publication_gate: no_go
+correction_model: deferred_until_descriptive_audit
+stage_d:
+  run_only_after_descriptive_review: true
+  l2: 1.0
+  newton_steps: 25
+  folds: 5
+  seed: 20261115
+  labels: [object_union, face, text]
+  covariate_columns: [area_fraction, centroid_distance_px, luminance_contrast, target_index, prev_distance_px]
+
+checkpoint:
+  repository: https://github.com/matthias-k/DeepGaze
+  commit: c7db17e2d1d7ea6468ffdee2cfaddf141095dcff
+  weights_release: v1.1.0
+  centerbias_release: v1.0.0
+
+geometry:
+  canvas: [800, 600]
+  resized: [1167, 875]
+  scale: 35/24
+  mask_orientation: hdf5_transpose_to_height_width
+  fixation_pixel: nearest_rint_on_original_canvas
+  probability: fine_grid_mass_binned_by_pixel_center_then_renormalized
+
+history:
+  included_fixations: [-1, -2, -3, -4]
+  minimum_target_index: 4
+
+eligibility: same_paired_targets_as_outputs/osie_deepgaze3_v2
+attributes_file: data/raw/external/osie_attrs.mat
+attribute_order_verified:
+  - text
+  - face
+  - emotion
+  - sound
+  - smell
+  - taste
+  - touch
+  - motion
+  - operability
+  - watchability
+  - touched
+  - gazed
+positive_rule: value_greater_than_zero
+primary_labels: [object_union, face, text]
+coverage_min_images: 100
+log_loss_clip: 1.0e-6
+border_radii_px: [0, 1, 12]
+reliability_bins: 10
+bootstrap_draws: 1000
+bootstrap_seed: 20261115
+crossfit_folds: 5
+controls:
+  n_shifts: 8
+  radius_px: 80
+  min_fraction_inside: 0.8
+  max_candidates: 40
+  seed: 20261115
+  previous_fixation_near_px: 100
+failure_rule:
+  min_fixations: 20
+  n_each_tail: 2
+  labels: [face, text]
+  rank: image_mean_observed_minus_predicted
+previously_scored_output: outputs/osie_deepgaze3_v2/deepgaze3_osie_fixations.csv
+output_dir: outputs/semantic_calibration_v1
+stimuli: data/raw/external/osie_stimuli_all
+fixations: data/raw/external/osie_fixations.mat

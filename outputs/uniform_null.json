@@ -1,0 +1,20 @@
+{
+  "canvas_width_px": 1680.0,
+  "canvas_height_px": 1050.0,
+  "canvas_source": "COCO-FreeView readme v1.0 (06/2022) states that images were resized to 1680x1050 with zero padding and the aspect ratio kept.",
+  "support": "[0, width] x [0, height]",
+  "mc_n": 200000,
+  "mc_seed": 20261114,
+  "mc_mean_radius_px": 531.7555416425721,
+  "mc_se_radius_px": 0.47585474704414393,
+  "grid_step_px": 1.0,
+  "grid_mean_radius_px": 530.6851922295876,
+  "comparison_mean_radius_px": 530.6851922295876,
+  "comparison_definition": "mean distance from the canvas center to the center of every 1 px cell",
+  "abs_diff_mc_minus_grid_px": 1.0703494129844557,
+  "disk_fraction_by_radius_px": {
+    "100": 0.017809482163207446,
+    "200": 0.07123792865282978,
+    "400": 0.28495171461131913
+  }
+}

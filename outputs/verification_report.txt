@@ -1,0 +1,35 @@
+HumanGazeLab verification
+generated_at_utc: 2026-11-14T05:07:54.837138+00:00
+fixation_sha256: 771167f4b5de5b9b58fb07c40d6e285d38b3b2ab9e4c6267df8a454a909da730
+fixation_bytes: 50110884
+n_scanpaths: 43048
+n_fixations: 665005
+n_images: 4317
+n_subjects: 10
+subject_ids: [101, 102, 103, 104, 105, 107, 108, 109, 110, 116]
+split_scanpath_counts: {'train': 37038, 'valid': 6010}
+split_image_counts: {'train': 3714, 'valid': 603}
+condition_counts: {'freeview': 43048}
+n_fixations_outside_canvas: 0
+duration_range: 1.0 5270.0
+duration_sum_median: 4161.0
+n_scanpaths_duration_sum_gt_5000: 325
+n_durations_gt_5000: 51
+fraction_first_fixation_within_50px: 0.8669160007433563
+uniform_mc_mean_radius_px: 531.7555416425721
+uniform_mc_se_radius_px: 0.47585474704414393
+uniform_grid_mean_radius_px: 530.6851922295876
+uniform_crosscheck_abs_diff_px: 1.0703494129844557
+scanpath_figures: wrote scanpath figures for 6 subset images
+
+Primary subject-equal estimates on subset=all
+metric	estimate	ci_low	ci_high	comparison	n_groups	n_scanpaths
+mean_radial_distance_post_px	314.922	298.566	330.126	530.6851922295876	10	42997
+fraction_within_200px_post	0.287822	0.255425	0.324492	0.07123792865282978	10	42997
+mean_saccade_post_px	270.212	240.67	296.873	nan	10	42932
+shuffled_minus_real_saccade_post_px	122.554	100.747	137.996	nan	10	42932
+late_minus_early_radius_post_k3_px	36.9206	21.3166	52.0983	nan	10	42731
+late_minus_early_saccade_post_k3_px	17.0726	-0.777661	34.859	nan	10	42610
+late_minus_early_radius_post_t1500_px	13.5081	-0.398638	27.0559	nan	10	42580
+late_minus_early_saccade_post_t1500_px	12.1254	-3.99078	27.3909	nan	10	42068
+

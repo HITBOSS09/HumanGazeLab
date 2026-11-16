@@ -1,0 +1,53 @@
+# Within-OSIE temporal evaluation. This split and grid were set before the
+# OSIE scores were computed. They are not the authors' 500/200 split.
+# COCO-FreeView and OSIE are not pooled.
+
+experiment_id: osie_v1
+fixation_path: data/raw/external/osie_fixations.mat
+output_dir: outputs/osie_v1
+source_url: "https://github.com/NUS-VIP/predicting-human-gaze-beyond-pixels"
+paper: "Xu, Jiang, Wang, Kankanhalli, and Zhao, Journal of Vision, January 2014"
+
+canvas:
+  width_px: 800
+  height_px: 600
+  note: "Released coordinates fall inside 800 by 600. The paper says the stimuli are 800 by 600 and were scaled to the full height of a 1680 by 1050 display. This run did not download the stimuli and did not verify the mapping with an overlay."
+
+grid:
+  nx: 20
+  ny: 15
+
+models:
+  sigma_candidates_px: [24, 40, 64, 96, 128]
+  alpha_primary: 0.05
+  lambda_candidates: [0.0, 0.25, 0.5, 0.75, 1.0]
+  # Pixel bandwidths and mixture weights selected on COCO-FreeView train images.
+  # Used only for the frozen-bandwidth transfer, after refitting densities on OSIE train images.
+  coco_frozen_sigma_center_px: 24
+  coco_frozen_sigma_history_px: 24
+  coco_frozen_sigma_loo_px: 40
+  coco_frozen_lambda_center_history: 0.75
+  coco_frozen_lambda_loo_history: 0.5
+
+splits:
+  role_modulus: 5
+  bandwidth_bucket: 0
+  mixture_bucket: 1
+  train_split_name: train
+  eval_split_name: valid
+  held_out_bucket: 4
+
+temporal:
+  # The released file does not label a forced initial fixation. Primary targets
+  # include released index 0. History models are undefined at index 0.
+  primary_index_min: 0
+  early_start: 0
+  early_end: 2
+  late_start: 6
+  balanced_min_length: 9
+  index_curve_max: 8
+
+uncertainty:
+  n_bootstrap: 2000
+  bootstrap_seed: 20261114
+  shuffle_seed: 20261114

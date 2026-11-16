@@ -1,0 +1,44 @@
+# Frozen before any score on the images beyond the nine in outputs/baseline_v1.
+# Exploratory: those nine outcomes, this geometry, and this metric were already chosen.
+status: exploratory
+model_training: false
+publication_gate: no_go
+
+checkpoint:
+  repository: https://github.com/matthias-k/DeepGaze
+  commit: c7db17e2d1d7ea6468ffdee2cfaddf141095dcff
+  weights_release: v1.1.0
+  weights_file: deepgaze3.pth
+  centerbias_release: v1.0.0
+  centerbias_file: centerbias_mit1003.npy
+
+geometry:
+  osie_pixels_per_degree: 24
+  training_pixels_per_degree: 35
+  source_canvas: [800, 600]
+  resize: pil_bilinear
+  image_tensor: float32_0_to_255
+
+history:
+  included_fixations: [-1, -2, -3, -4]
+  minimum_target_index: 4
+  missing_fixations: false
+
+metric: natural_log_density_minus_mit1003_centerbias_over_ln2
+centerbias: nearest_zoom_then_logsumexp
+probability_reference: mit1003_centerbias_template
+frozen_b3_reference: uniform_bins
+
+pairing:
+  rule: next image in sorted name order, for the same subject, whose scanpath is long enough for the target index
+  same_targets: true
+
+uncertainty:
+  bootstrap_draws: 1000
+  bootstrap_seed: 20261114
+  crossed: subject_and_image_resample_of_subject_equal_mean
+
+previously_scored_output: outputs/baseline_v1/deepgaze3_osie_fixations.csv
+output_dir: outputs/osie_deepgaze3_v2
+stimuli: data/raw/external/osie_stimuli_all
+fixations: data/raw/external/osie_fixations.mat

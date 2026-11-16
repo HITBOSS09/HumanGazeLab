@@ -1,0 +1,26 @@
+temporal_information_gain_valid.png
+Validation images. Subject-equal mean information gain in bits per fixation, after an equal-weight mean inside each scanpath. The band is the percentile bootstrap of the 10 subject means. Index 0 is not a target. B2 and B3 use other observers on the same validation image. B6 image uses a within-split image derangement. B6 order uses a non-predecessor fixation from the same scanpath.
+
+model_comparison_valid.png
+Same aggregation, all primary indices together. Whiskers are the subject-bootstrap interval.
+
+observer_information_gain_valid.png
+One point is one subject's scanpath-equal mean on validation images.
+
+image_heterogeneity_valid.png
+One observation is one validation image's unweighted mean information gain. This is not a subject-level interval.
+
+paired_contrasts_valid.png
+Paired subject-level differences. Early-minus-late contrasts use only scanpaths whose released length is at least 12. An interval that excludes zero is a statement about this resample, not a causal claim.
+
+sample_size_by_index.png
+Released scanpaths that still have a fixation at that index. Later indices are a selected subset of longer scanpaths.
+
+center_bias_reliability_valid.png
+Validation fixations against the train-fitted B1 map. Each point pools an equal number of bins ordered by predicted probability. The vertical axis is the share of validation fixations in those bins. The horizontal axis is the share of probability the map assigns to those bins.
+
+epoch_information_gain_valid.png
+Pre-specified index groups on validation images: 1-3, 4-8, and 9 and later. Later groups contain fewer scanpaths.
+
+index0_sensitivity_valid.png
+Released index 0 scored as a target. The primary analysis does not include this index as a target. The two B1 bars use the primary map and a map refit with index 0 included. B2 here uses only other observers' index-0 locations.

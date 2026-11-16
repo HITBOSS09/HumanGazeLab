@@ -1,0 +1,30 @@
+# Proposed evaluation boundary. Not approved and not scored.
+# COCO-FreeView validation and the OSIE hash holdout stay closed.
+# They cannot be reused as untouched confirmation by reshuffling.
+status: not_approved
+confirmatory_scores_computed: false
+model_training: false
+
+closed_exploratory:
+  - name: COCO-FreeView author validation
+    reason: Scored in temporal_v1 and again in protocolshift_b3_v1.
+  - name: OSIE crc32(name) % 5 == 4
+    reason: Scored in osie_v1 and again in protocolshift_b3_v1.
+    author_split: false
+
+closed_fit:
+  - name: COCO-FreeView author train
+  - name: OSIE images not in the hash holdout
+
+future_mit1003:
+  archive: data/raw/external/mit1003_DATA.zip
+  fixations_extracted: false
+  rule: SHA-256 of the image stem, first byte
+  tune_bytes: [0, 31]
+  final_bytes: [224, 255]
+  train_bytes: [32, 223]
+  manifest: outputs/protocolshift_prep_v1/mit1003_split_manifest.csv
+  diagnostic_conversion: outputs/baseline_v1/
+  diagnostic_partitions: [train, tune]
+  final_partition_read: false
+  final_use: forbidden. Train and tune were converted for diagnostics with the authors' checkFixations.m. The final partition was not read. It stays closed until an investigator approves a hypothesis. An untouched local split is not a model-independent test of a model trained on MIT1003.

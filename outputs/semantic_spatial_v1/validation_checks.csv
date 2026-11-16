@@ -1,0 +1,14 @@
+check,pass,detail
+700 unique completed images,True,"700 ids, 0 duplicates"
+event files match the completed list,True,"700 non-empty csv files, no extras"
+images match the frozen fixation table,True,symmetric difference 0 against outputs/osie_deepgaze3_v2
+images match the frozen region-mass events,True,"symmetric difference 0 against object_union, face, and text"
+no duplicate fixation keys,True,"image, subject, target index, label"
+two label rows for every eligible fixation,True,112714 rows = 56357 fixations x 2 labels
+log density matches the frozen scores,True,"56357 rows, maximum absolute gap 0 nats"
+region mass matches the frozen face and text events,True,maximum absolute gap 0 on 42286 face rows and 21984 text rows
+fractional weights sum to one,True,"15095 in-mask rows, maximum absolute deviation 4.856e-10"
+predicted bin shares are exact quarters,True,"maximum absolute deviation from 0.25 is 2.731e-14, on every in-mask row"
+fractional plateau rule on every file,True,every event file has obs0-obs3; 21 in-mask fixations land on a density value that crosses a quarter and carry a split weight; the other in-mask fixations land inside a single quarter
+image-equal intervals recomputed,True,face and text highest-bin intervals match uncertainty.csv exactly at 1000 draws and seed 20261115
+all 15 subjects negative,True,face gaps -0.1359 to -0.0610; text gaps -0.1846 to -0.0942

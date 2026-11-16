@@ -1,0 +1,36 @@
+key,value
+n_scanpaths,43048
+n_fixations,665005
+n_images,4317
+n_subjects,10
+subject_ids,"[101, 102, 103, 104, 105, 107, 108, 109, 110, 116]"
+subject_scanpath_counts,"{101: 4316, 102: 4317, 103: 4317, 104: 4317, 105: 4317, 107: 4317, 108: 4221, 109: 4316, 110: 4293, 116: 4317}"
+subject_fixation_counts,"{101: 63568, 102: 74425, 103: 65995, 104: 58296, 105: 66304, 107: 69975, 108: 66042, 109: 58697, 110: 68372, 116: 73331}"
+split_scanpath_counts,"{'train': 37038, 'valid': 6010}"
+split_fixation_counts,"{'train': 572184, 'valid': 92821}"
+split_image_counts,"{'train': 3714, 'valid': 603}"
+condition_counts,{'freeview': 43048}
+correct_counts,{'1': 43048}
+fix_on_target_counts,{'False': 43048}
+duplicate_image_subject_split,0
+x_min,8.5
+x_max,1679.9
+y_min,0.0
+y_max,1049.7
+duration_min,1.0
+duration_max,5270.0
+n_fixations_outside_canvas,0
+n_sequences_not_strictly_increasing_duration,42902
+n_sequences_nondecreasing_duration,147
+n_nonpositive_durations,0
+n_durations_gt_5000,51
+n_scanpaths_duration_sum_gt_5000,325
+n_scanpaths_duration_sum_gt_10000,1
+duration_sum_min,274.0
+duration_sum_median,4161.0
+duration_sum_max,10170.0
+n_length_1,51
+first_fixation_radius_median,22.100565601016555
+fraction_first_fixation_within_50px,0.8669160007433563
+fraction_first_fixation_within_100px,0.9577448429659915
+images_by_n_subjects,"{9: 122, 10: 4195}"

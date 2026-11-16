@@ -1,0 +1,31 @@
+{
+  "experiment_id": "temporal_v1",
+  "config_sha256": "e743c4ce0f3bd6a8b32e7367137b46cd0e420491e77f08b87d62d3a3c96a30ae",
+  "fixation_sha256": "771167f4b5de5b9b58fb07c40d6e285d38b3b2ab9e4c6267df8a454a909da730",
+  "n_scanpaths": 43048,
+  "n_primary_fixations": 621957,
+  "n_valid_primary_fixations": 86811,
+  "n_train_primary_fixations": 535146,
+  "selected_sigma_center_px": 24.0,
+  "selected_sigma_history_px": 24.0,
+  "selected_sigma_loo_px": 40.0,
+  "selected_lambda_center_history": 0.75,
+  "selected_lambda_loo_history": 0.5,
+  "alpha_primary": 0.05,
+  "grid": [
+    42,
+    26
+  ],
+  "loo_count_identity_checked_on_n_images": 25,
+  "train_center_count_mass": 535146,
+  "same_image_models": [
+    "B2_loo_image",
+    "B3_loo_index",
+    "B5c_loo_history",
+    "B6_image_shuffle"
+  ],
+  "confirmatory_split": "valid",
+  "train_scores_are_descriptive": true,
+  "duration_column_used": false,
+  "hypothesis_adopted": false
+}

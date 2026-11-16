@@ -1,0 +1,7 @@
+reason,image,object_index,area_px,image_overlap_px
+smallest_object,1605,7,2,1267
+largest_object,1426,1,241289,0
+smallest_face,1241,6,30,575
+largest_text,1243,2,115104,577
+smallest_border_object,1434,6,208,9944
+most_overlap,1550,0,135432,152154

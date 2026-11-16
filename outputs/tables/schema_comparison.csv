@@ -1,0 +1,13 @@
+field,in_readme_v1_0,in_trainval_json,note
+trial_ind,True,False,Named in readme v1.0. Absent from the train+validation JSON.
+name,True,True,COCO-style JPEG file name.
+subject,True,True,"Observed ids: [101, 102, 103, 104, 105, 107, 108, 109, 110, 116]."
+task,True,False,Named in readme v1.0 as the COCO-Search18 target category. Absent from the JSON.
+condition,True,True,Readme v1.0 describes target-present or target-absent labels from COCO-Search18. Observed value counts: {'freeview': 43048}.
+X,True,True,"Observed range [8.5, 1679.9] on the readme canvas width."
+Y,True,True,"Observed range [0.0, 1049.7] on the readme canvas height."
+T,True,True,"Readme v1.0 calls T fixation durations ordered from first to last, and does not name the unit. 42902 of 43048 sequences are not strictly increasing, which is expected for durations and not for timestamps."
+length,True,True,Matches len(X) for every loaded record; the loader rejects mismatches.
+split,True,True,"Observed scanpath counts: {'train': 37038, 'valid': 6010}."
+fixOnTarget,False,True,Not named in readme v1.0. Present in the JSON. Observed value counts: {'False': 43048}.
+correct,False,True,Not named in readme v1.0. Present in the JSON. Observed value counts: {'1': 43048}.

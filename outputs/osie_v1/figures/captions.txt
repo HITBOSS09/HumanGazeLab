@@ -1,0 +1,2 @@
+osie_temporal_information_gain.png
+Held-out OSIE images under bandwidths selected on other OSIE images. Subject-equal means of the 15 file-order subject indices. Index 0 is a released fixation, not a labeled forced fixation. History is undefined at index 0, so its curve starts at index 1. These indices are not aligned with COCO-FreeView indices.

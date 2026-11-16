@@ -1,0 +1,33 @@
+{
+  "generated_at_utc": "2026-11-14T05:07:54.837138+00:00",
+  "package_version": "0.1.0",
+  "python": "3.12.3",
+  "numpy": "2.5.4",
+  "pandas": "3.1.1",
+  "scipy": "1.18.1",
+  "matplotlib": "3.11.2",
+  "pillow": "13.0.0",
+  "pyyaml": "6.0.3",
+  "fixation_path": "data/raw/COCOFreeView_fixations_trainval.json",
+  "fixation_sha256": "771167f4b5de5b9b58fb07c40d6e285d38b3b2ab9e4c6267df8a454a909da730",
+  "fixation_bytes": 50110884,
+  "n_scanpaths": 43048,
+  "n_fixations": 665005,
+  "n_images": 4317,
+  "n_subjects": 10,
+  "subject_ids": [
+    101,
+    102,
+    103,
+    104,
+    105,
+    107,
+    108,
+    109,
+    110,
+    116
+  ],
+  "uniform_crosscheck_abs_diff_px": 1.0703494129844557,
+  "scanpath_figures": "wrote scanpath figures for 6 subset images",
+  "primary_fixation_set": "post_initial"
+}

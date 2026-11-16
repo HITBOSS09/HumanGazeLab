@@ -1,0 +1,56 @@
+# Frozen before any within-mask bin count. Exploratory. The 700-image
+# information gains and the region-mass calibration have already been inspected.
+status: exploratory
+model_training: false
+publication_gate: no_go
+calibrator: not_fit
+
+checkpoint:
+  repository: https://github.com/matthias-k/DeepGaze
+  commit: c7db17e2d1d7ea6468ffdee2cfaddf141095dcff
+  weights_release: v1.1.0
+  centerbias_release: v1.0.0
+
+geometry:
+  canvas: [800, 600]
+  resized: [1167, 875]
+  scale: 35/24
+  same_projection_as: outputs/semantic_calibration_v1
+
+eligibility: same_paired_targets_as_outputs/osie_deepgaze3_v2
+labels: [face, text]
+n_bins: 4
+equal_mass_target: 0.25
+bin_order: density_value_descending
+boundary_rule: split_tied_mass_across_the_quarters_it_covers
+tie_break: equal_density_pixels_are_exchangeable
+min_pixels: 4
+min_region_mass: 1.0e-8
+primary_contrast: observed_highest_bin_minus_its_predicted_mass
+primary_bin: 0
+pilot_stride: 20
+area_sensitivity_px: [100, 1000]
+rim_radius_px: 1
+early_index_max: 6
+bootstrap_draws: 1000
+bootstrap_seed: 20261115
+log_density_stop: 1.0e-3
+region_mass_stop: 1.0e-4
+controls:
+  n_shifts: 8
+  radius_px: 80
+  min_fraction_inside: 0.8
+  max_candidates: 40
+  seed: 20261115
+decision_rule:
+  total_mass_source: outputs/semantic_calibration_v1/uncertainty_summary.csv
+  total_mass_estimand: image_equal_gap
+  within_estimand: image_equal_highest_bin_minus_predicted
+  call: both_labels_must_agree_otherwise_report_the_split
+previously_scored_output: outputs/osie_deepgaze3_v2/deepgaze3_osie_fixations.csv
+region_events: outputs/semantic_calibration_v1/region_events
+region_summary: outputs/semantic_calibration_v1/semantic_calibration_summary.csv
+output_dir: outputs/semantic_spatial_v1
+stimuli: data/raw/external/osie_stimuli_all
+fixations: data/raw/external/osie_fixations.mat
+attributes_file: data/raw/external/osie_attrs.mat

@@ -1,0 +1,42 @@
+{
+  "retrieved_at_utc": "2026-11-14T05:03:46.576014+00:00",
+  "project_page": "https://sites.google.com/view/cocosearch/coco-freeview",
+  "stimulus_page": "https://sites.google.com/view/cocosearch/home",
+  "disk_total_bytes": 271966183424,
+  "disk_used_bytes": 8483860480,
+  "disk_free_bytes": 263465545728,
+  "fixation": {
+    "url": "http://vision.cs.stonybrook.edu/~cvlab_download/COCOFreeView_fixations_trainval.json",
+    "path": "data/raw/COCOFreeView_fixations_trainval.json",
+    "bytes": 50110884,
+    "sha256": "771167f4b5de5b9b58fb07c40d6e285d38b3b2ab9e4c6267df8a454a909da730",
+    "downloaded_this_run": false,
+    "content_length": 50110884,
+    "last_modified": "Fri, 23 Jun 2023 05:25:00 GMT",
+    "etag": "\"2fca1a4-5fec538e5ccb2\"",
+    "content_type": "application/json"
+  },
+  "readme": {
+    "url": "https://drive.google.com/uc?export=download&id=1Hj_jyK8Ml27Ge_5sogEtyI7XOjyad4aj",
+    "path": "data/raw/COCOFreeView_readme.txt",
+    "bytes": 2222,
+    "sha256": "9812cd3b36c98d08de0bfccf472b18e801e5a9d824c5aa347b5fb5fd71b0122e",
+    "downloaded_this_run": true,
+    "content_length": 2222,
+    "last_modified": "Mon, 20 Jun 2022 22:40:34 GMT",
+    "etag": null,
+    "content_type": "application/octet-stream"
+  },
+  "readme_matches_committed_copy": true,
+  "committed_readme_sha256": "9812cd3b36c98d08de0bfccf472b18e801e5a9d824c5aa347b5fb5fd71b0122e",
+  "test_fixation_probe": {
+    "url": "http://vision.cs.stonybrook.edu/~cvlab_download/COCOFreeView_fixations_test.json",
+    "http_status": 404,
+    "note": "The COCO-FreeView project page says the testing set was taken down pending an online evaluation service."
+  },
+  "image_archives": {
+    "tp_zip_url": "http://vision.cs.stonybrook.edu/~cvlab_download/COCOSearch18-images-TP.zip",
+    "ta_zip_url": "http://vision.cs.stonybrook.edu/~cvlab_download/COCOSearch18-images-TA.zip",
+    "note": "Image bytes are fetched by range request in scripts/prepare_images.py. The full zip is not stored."
+  }
+}

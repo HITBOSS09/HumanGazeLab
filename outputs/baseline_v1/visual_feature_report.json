@@ -1,0 +1,13 @@
+{
+  "partition": "tune",
+  "final_partition_opened": false,
+  "window_radius_px": 16,
+  "seed": 20261114,
+  "n_images": 117,
+  "n_fixations": 14728,
+  "n_inside": 13874,
+  "n_outside": 854,
+  "object_descriptors": "not computed; the local ALLSTIMULI release has no object masks or boxes",
+  "visual_angle": "not applied; MIT1003 pixels per degree remains unresolved",
+  "center": "canvas center is width/2, height/2 of the JPEG, not a reconstructed screen center"
+}

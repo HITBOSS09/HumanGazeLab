@@ -1,0 +1,5 @@
+n_groups,estimate,sd,sem,ci_low,ci_high,metric,subset,estimand,nx,ny,sigma_source
+10,0.8588899369541008,0.19035923923594647,0.06019687696424815,0.7522289930789403,0.9730374835079822,ig_B1_center,valid|grid_21x13,subject_scanpath_equal,21,13,frozen_from_primary_grid_selection
+10,1.4080712947345813,0.47225045281685424,0.14933870569471394,1.1358360984430114,1.6949097300467184,ig_B4_history,valid|grid_21x13,subject_scanpath_equal,21,13,frozen_from_primary_grid_selection
+10,0.8730383211056149,0.19046560148893138,0.060230511661898085,0.7600779389003138,0.9919328449492404,ig_B1_center,valid|grid_84x52,subject_scanpath_equal,84,52,frozen_from_primary_grid_selection
+10,1.4930105191051797,0.5103416932156949,0.16138421355084964,1.1870214746529508,1.7903330288924426,ig_B4_history,valid|grid_84x52,subject_scanpath_equal,84,52,frozen_from_primary_grid_selection

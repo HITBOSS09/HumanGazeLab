@@ -1,0 +1,19 @@
+{
+  "experiment_id": "osie_v1",
+  "fixation_sha256": "2aab9133a407e4eff3f57ab5799872b162dbc77ca462c0391762eb5e67deadb9",
+  "n_scanpaths": 10500,
+  "n_subjects": 15,
+  "n_images": 700,
+  "n_valid_images": 148,
+  "selected_sigma_center_px": 24.0,
+  "selected_sigma_history_px": 24.0,
+  "selected_sigma_loo_px": 24.0,
+  "selected_lambda_center_history": 0.75,
+  "selected_lambda_loo_history": 0.25,
+  "primary_includes_index_0": true,
+  "history_defined_at_index_0": false,
+  "pooled_with_coco_freeview": false,
+  "stimuli_downloaded": false,
+  "duration_column_used": false,
+  "hypothesis_adopted": false
+}

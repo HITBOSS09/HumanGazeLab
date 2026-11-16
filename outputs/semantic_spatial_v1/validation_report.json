@@ -1,0 +1,94 @@
+{
+  "complete": true,
+  "n_checks": 13,
+  "n_failed": 0,
+  "output_timestamp_utc": "2026-11-16T07:09:59Z",
+  "deepgaze_commit": "c7db17e2d1d7ea6468ffdee2cfaddf141095dcff",
+  "state_dict_missing": 0,
+  "state_dict_unexpected": 0,
+  "face_lift": 12.969990193655116,
+  "log_density_max_abs": 0.0,
+  "region_mass_max_abs": 0.0,
+  "weight_sum_max_abs": 4.856e-10,
+  "predicted_quarter_max_abs": 2.731e-14,
+  "in_mask_fixations": {
+    "face": 10640,
+    "text": 4455
+  },
+  "histogram_images": {
+    "face": 513,
+    "text": 233
+  },
+  "masks_present_images": {
+    "face": 521,
+    "text": 246
+  },
+  "split_weight_fixations": 21,
+  "checks": [
+    {
+      "check": "700 unique completed images",
+      "pass": true,
+      "detail": "700 ids, 0 duplicates"
+    },
+    {
+      "check": "event files match the completed list",
+      "pass": true,
+      "detail": "700 non-empty csv files, no extras"
+    },
+    {
+      "check": "images match the frozen fixation table",
+      "pass": true,
+      "detail": "symmetric difference 0 against outputs/osie_deepgaze3_v2"
+    },
+    {
+      "check": "images match the frozen region-mass events",
+      "pass": true,
+      "detail": "symmetric difference 0 against object_union, face, and text"
+    },
+    {
+      "check": "no duplicate fixation keys",
+      "pass": true,
+      "detail": "image, subject, target index, label"
+    },
+    {
+      "check": "two label rows for every eligible fixation",
+      "pass": true,
+      "detail": "112714 rows = 56357 fixations x 2 labels"
+    },
+    {
+      "check": "log density matches the frozen scores",
+      "pass": true,
+      "detail": "56357 rows, maximum absolute gap 0 nats"
+    },
+    {
+      "check": "region mass matches the frozen face and text events",
+      "pass": true,
+      "detail": "maximum absolute gap 0 on 42286 face rows and 21984 text rows"
+    },
+    {
+      "check": "fractional weights sum to one",
+      "pass": true,
+      "detail": "15095 in-mask rows, maximum absolute deviation 4.856e-10"
+    },
+    {
+      "check": "predicted bin shares are exact quarters",
+      "pass": true,
+      "detail": "maximum absolute deviation from 0.25 is 2.731e-14, on every in-mask row"
+    },
+    {
+      "check": "fractional plateau rule on every file",
+      "pass": true,
+      "detail": "every event file has obs0-obs3; 21 in-mask fixations land on a density value that crosses a quarter and carry a split weight; the other in-mask fixations land inside a single quarter"
+    },
+    {
+      "check": "image-equal intervals recomputed",
+      "pass": true,
+      "detail": "face and text highest-bin intervals match uncertainty.csv exactly at 1000 draws and seed 20261115"
+    },
+    {
+      "check": "all 15 subjects negative",
+      "pass": true,
+      "detail": "face gaps -0.1359 to -0.0610; text gaps -0.1846 to -0.0942"
+    }
+  ]
+}

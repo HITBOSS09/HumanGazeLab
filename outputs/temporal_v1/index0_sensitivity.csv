@@ -1,0 +1,5 @@
+n_groups,estimate,sd,sem,ci_low,ci_high,metric,subset,estimand,note
+10,0.0,0.0,0.0,0.0,0.0,ig_B0_uniform,valid|index_0_only,subject_scanpath_equal,Index 0 is not in the primary target set. This row is a sensitivity.
+10,2.383139073396929,0.026870453777523,0.008497183569924802,2.3665480882492673,2.3978500506655385,ig_B1_center_map_excludes_index0,valid|index_0_only,subject_scanpath_equal,Index 0 is not in the primary target set. This row is a sensitivity.
+10,3.6472343607529956,0.13981626175093956,0.04421378410632508,3.5573500543676118,3.7238922218852677,ig_B1_center_map_includes_index0,valid|index_0_only,subject_scanpath_equal,Index 0 is not in the primary target set. This row is a sensitivity.
+10,6.049331002429289,0.27677745925913655,0.08752471762533312,5.8826597353558325,6.199855975193129,ig_B2_other_observers_index0,valid|index_0_only,subject_scanpath_equal,Index 0 is not in the primary target set. This row is a sensitivity.

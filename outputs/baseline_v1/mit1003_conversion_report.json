@@ -1,0 +1,43 @@
+{
+  "mfile_sha256": "c3721a971a754a149109e751d4739ef0e989983961a82b1a70d0b91454545664",
+  "mfile_url": "https://people.csail.mit.edu/tjudd/WherePeopleLook/Code/DatabaseCode/checkFixations.m",
+  "final_partition_opened": false,
+  "n_official_trials": 13170,
+  "n_official_errors": 0,
+  "by_partition": [
+    {
+      "partition": "train",
+      "n_trials": 11415,
+      "n_ok": 11415,
+      "mean_n_fixations": 8.380639509417433,
+      "sd_n_fixations": 2.5572320773215704,
+      "mean_duration_ms": 362.1739586126996
+    },
+    {
+      "partition": "tune",
+      "n_trials": 1755,
+      "n_ok": 1755,
+      "mean_n_fixations": 8.392022792022791,
+      "sd_n_fixations": 2.570143494466489,
+      "mean_duration_ms": 367.14641844912506
+    }
+  ],
+  "negatives_as_nan_trials": 1975,
+  "negatives_as_nan_errors": 26,
+  "max_agreement_abs_error": 3.2999878385453485e-09,
+  "note": "Negatives stay in the official call. The readme calls them blinks. The m-file only special-cases NaN, and its no-saccade branch calls nanmedian, which this Octave statistics package does not implement.",
+  "retry_trials": 2207,
+  "retry_still_failing": 0,
+  "official_ok": 13170,
+  "ok_mean_n_fixations": 8.38215641609719,
+  "ok_mean_duration_ms": 362.83657569796355,
+  "stored_fixation_rows": 2060,
+  "stored_count_mismatches": 0,
+  "stored_max_abs_dx": 4.956746124662459e-11,
+  "stored_max_abs_dy": 4.8544279707130045e-11,
+  "stored_max_abs_duration_ms": 3.3651303965598345e-11,
+  "position_columns": "first two columns; a third column of 0-3 labels is not passed to the detector",
+  "nan_functions": "nanmedian and nanvar are local two-line definitions because Octave statistics 1.6.3 does not implement them. checkFixations.m was not edited.",
+  "first_pass_errors_before_reader_fix": 2207,
+  "first_pass_note": "The first pass rejected 3-column eyeData and MATLAB names truncated to the variable stored in the file. Those trials were rerun. The by_partition means are after that rerun."
+}

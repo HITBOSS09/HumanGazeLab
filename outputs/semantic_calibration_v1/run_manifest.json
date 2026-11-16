@@ -1,0 +1,14 @@
+{
+  "exploratory": true,
+  "complete": true,
+  "stage": "all",
+  "deepgaze_commit": "c7db17e2d1d7ea6468ffdee2cfaddf141095dcff",
+  "state_dict_missing": 0,
+  "state_dict_unexpected": 0,
+  "n_requested_images": 700,
+  "n_event_rows": 732641,
+  "face_lift": 12.969990193655116,
+  "seconds_this_process": 22863.07273054123,
+  "cuda": false,
+  "gpu_memory_bytes": null
+}

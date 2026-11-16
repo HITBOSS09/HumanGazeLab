@@ -1,0 +1,5 @@
+estimate,n_subjects,n_fixations,fit_split,eval_split,source,target,same_dataset,coordinate_frame,sigma_width_fraction,uses_target_validation_for_fit,visual_angle_normalized,exploratory
+1.4201444257864648,10,86811,train,valid,COCO-FreeView,COCO-FreeView,True,unit_square,0.03,False,False,True
+1.361316629850275,15,18465,train,valid,COCO-FreeView,OSIE,False,unit_square,0.03,False,False,True
+1.3885803449283856,10,86811,train,valid,OSIE,COCO-FreeView,False,unit_square,0.03,False,False,True
+1.4408546599666916,15,18465,train,valid,OSIE,OSIE,True,unit_square,0.03,False,False,True

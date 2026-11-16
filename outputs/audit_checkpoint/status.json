@@ -1,0 +1,23 @@
+{
+  "temporal_v1_frozen": true,
+  "osie_v1_frozen": true,
+  "coco_checksum_all_match": true,
+  "osie_checksum_all_match": true,
+  "coco_b3_recomputed": -0.31382255826016203,
+  "osie_b3_recomputed": 1.8482047247030444,
+  "overlay_images_downloaded": [
+    "1001.jpg",
+    "1009.jpg",
+    "1116.jpg",
+    "1138.jpg",
+    "1189.jpg",
+    "1275.jpg",
+    "1521.jpg",
+    "1650.jpg",
+    "1660.jpg"
+  ],
+  "overlay_failures": [],
+  "stimuli_pixel_size_checked_against_800x600": true,
+  "zero_shot_coco_density_on_osie": false,
+  "dataset_adapted_evaluation": true
+}

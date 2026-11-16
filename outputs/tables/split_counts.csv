@@ -1,0 +1,3 @@
+split,n_scanpaths,n_images,n_fixations,n_subjects
+train,37038,3714,572184,10
+valid,6010,603,92821,10

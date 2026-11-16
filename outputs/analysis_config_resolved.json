@@ -1,0 +1,62 @@
+{
+  "config": {
+    "canvas_width_px": 1680.0,
+    "canvas_height_px": 1050.0,
+    "canvas_source": "COCO-FreeView readme v1.0 (06/2022) states that images were resized to 1680x1050 with zero padding and the aspect ratio kept.",
+    "drop_initial_fixation": true,
+    "early_k_primary": 3,
+    "early_k_sensitivity": [
+      1,
+      2,
+      5
+    ],
+    "center_radius_primary_px": 200.0,
+    "center_radii_px": [
+      100.0,
+      200.0,
+      400.0
+    ],
+    "early_time_primary_ms": 1500.0,
+    "early_time_sensitivity_ms": [
+      1000.0,
+      2000.0
+    ],
+    "n_shuffles": 20,
+    "shuffle_seed": 20261114,
+    "n_bootstrap": 2000,
+    "bootstrap_seed": 20261114,
+    "uniform_mc_n": 200000,
+    "uniform_mc_seed": 20261114,
+    "density_bins_x": 42,
+    "density_bins_y": 26,
+    "fixation_path": "data/raw/COCOFreeView_fixations_trainval.json",
+    "readme_path": "data/raw/COCOFreeView_readme.txt",
+    "image_dir": "data/raw/images_subset",
+    "output_dir": "outputs",
+    "n_train_images": 12,
+    "n_valid_images": 6,
+    "image_seed": 20261114,
+    "min_subjects": 10,
+    "prefer_archive": "TP",
+    "fixation_url": "http://vision.cs.stonybrook.edu/~cvlab_download/COCOFreeView_fixations_trainval.json",
+    "readme_url": "https://drive.google.com/uc?export=download&id=1Hj_jyK8Ml27Ge_5sogEtyI7XOjyad4aj",
+    "test_probe_url": "http://vision.cs.stonybrook.edu/~cvlab_download/COCOFreeView_fixations_test.json",
+    "project_page": "https://sites.google.com/view/cocosearch/coco-freeview",
+    "stimulus_page": "https://sites.google.com/view/cocosearch/home",
+    "tp_zip_url": "http://vision.cs.stonybrook.edu/~cvlab_download/COCOSearch18-images-TP.zip",
+    "ta_zip_url": "http://vision.cs.stonybrook.edu/~cvlab_download/COCOSearch18-images-TA.zip",
+    "readme_page": "https://drive.google.com/file/d/1Hj_jyK8Ml27Ge_5sogEtyI7XOjyad4aj/view?usp=sharing"
+  },
+  "versions": {
+    "package_version": "0.1.0",
+    "python": "3.12.3",
+    "numpy": "2.5.4",
+    "pandas": "3.1.1",
+    "scipy": "1.18.1",
+    "matplotlib": "3.11.2",
+    "pillow": "13.0.0",
+    "pyyaml": "6.0.3"
+  },
+  "generated_at_utc": "2026-11-14T05:07:54.837138+00:00",
+  "fixation_sha256": "771167f4b5de5b9b58fb07c40d6e285d38b3b2ab9e4c6267df8a454a909da730"
+}

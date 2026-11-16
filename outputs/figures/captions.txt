@@ -1,0 +1,20 @@
+fixation_density_post_initial.png
+Subject-mean spatial histogram of fixations after index 0. Bins: 42 by 26 on the 1680 by 1050 canvas. The SD panel is the sample standard deviation across subject maps.
+
+fixation_density_early_vs_late.png
+Same histogram construction, split at the first 3 post-initial fixations. Color scales are shared.
+
+radial_distance_vs_uniform.png
+Fixation-weighted distances to the canvas center, compared with one Monte Carlo uniform sample (seed and n are in configs/analysis.yaml). That sample mean can differ from the 1 px grid mean by about its standard error. metrics_summary.csv uses the grid mean. This histogram is not the subject-equal estimand.
+
+saccade_distance_real_vs_shuffled.png
+One permutation of each post-initial sequence, seed 20261115. The subject-equal shuffle contrast uses the mean of 20 permutations and is in metrics_summary.csv.
+
+subject_mean_radial_distance.png
+One point per subject id. The blue line is the unweighted mean of those points. The dashed line is the mean distance from the canvas center to 1 px cell centers, the same comparison value as metrics_summary.csv.
+
+scanpath_examples.png
+Six seeded subset images. The plotted subject is the lowest subject id present for that image. Coordinates are placed on a continuous canvas with extent [0, width] by [0, height]. Marker area increases with the released duration value.
+
+scanpath_all_subjects_example.png
+Every subject id in the release for the first image in the seeded subset manifest.

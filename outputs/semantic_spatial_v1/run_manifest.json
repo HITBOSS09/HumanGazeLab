@@ -1,0 +1,24 @@
+{
+  "exploratory": true,
+  "complete": true,
+  "stage": "all",
+  "deepgaze_commit": "c7db17e2d1d7ea6468ffdee2cfaddf141095dcff",
+  "state_dict_missing": 0,
+  "state_dict_unexpected": 0,
+  "n_requested_images": 700,
+  "n_fixation_rows": 112714,
+  "face_lift_requested": 12.969990193655116,
+  "paired_counts": {
+    "n_fixations": 98321,
+    "n_index_below_4": 41953,
+    "n_index_0": 10500,
+    "n_outside_canvas": 0,
+    "n_partner_outside_canvas": 0,
+    "n_no_partner": 11,
+    "n_scored": 56357
+  },
+  "seconds_this_process": 52039.770951747894,
+  "cuda": false,
+  "maps_cached_before_this_run": false,
+  "reproduction_max_gap": 0.0
+}
